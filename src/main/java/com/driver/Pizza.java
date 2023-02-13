@@ -12,62 +12,6 @@ public class Pizza {
     private boolean isbag;
 
 
-    public void setPrice(int price) {
-        this.price = price;
-
-    }
-
-    public Boolean getVeg() {
-        return isVeg;
-    }
-
-    public void setVeg(Boolean veg) {
-        isVeg = veg;
-    }
-
-    public void setBill(String bill) {
-        this.bill = bill;
-    }
-
-    public boolean isIscheese() {
-        return ischeese;
-    }
-
-    public void setIscheese(boolean ischeese) {
-        this.ischeese = ischeese;
-    }
-
-    public boolean isIstopping() {
-        return istopping;
-    }
-
-    public void setIstopping(boolean istopping) {
-        this.istopping = istopping;
-    }
-
-    public boolean isIsbill() {
-        return isbill;
-    }
-
-    public void setIsbill(boolean isbill) {
-        this.isbill = isbill;
-    }
-
-    public int getTopping() {
-        return topping;
-    }
-
-    public void setTopping(int topping) {
-        this.topping = topping;
-    }
-
-    public boolean isIsbag() {
-        return isbag;
-    }
-
-    public void setIsbag(boolean isbag) {
-        this.isbag = isbag;
-    }
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -80,6 +24,10 @@ public class Pizza {
             this.price = 400;
             this.topping = 120;
         }
+        this.ischeese = false;
+        this.isbag = false;
+        this.istopping  = false;
+        this.isbill = false;
         this.bill = "Base Price Of The Pizza: "+this.price+"\n";
     }
 
