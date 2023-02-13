@@ -16,7 +16,7 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
-        if(isVeg){
+        if(this.isVeg){
             this.price = 300;
             this.topping = 70;
         }
@@ -69,7 +69,7 @@ public class Pizza {
             if (istopping) this.bill += "Extra Toppings Added: " + this.topping + "\n";
             if (isbag) this.bill += "Paperbag Added: 20\n";
 
-            this.bill += "Total Price: " + this.price;
+            this.bill += "Total Price: " + this.price+"\n";
             this.isbill = true;
             return this.bill;
         }
